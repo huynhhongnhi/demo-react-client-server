@@ -1,0 +1,11 @@
+{
+  "name": "demo-react-fe-be",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\" "
+  },
+  "author": "",
+  "license": "ISC"
+}
