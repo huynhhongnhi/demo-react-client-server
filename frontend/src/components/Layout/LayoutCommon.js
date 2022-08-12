@@ -17,9 +17,9 @@ const LayoutCommon = () => {
                     <div className="col-12">
                         <BrowserRouter>
                             <Routes>
-                                <Route path="/" component={Home} />
-                                <Route path="/about" component={About} />
-                                <Route path="/login" component={Login} />
+                                <Route path="/" element={<Home/>} exact />
+                                <Route path="/about" element={<About/>} exact />
+                                <Route path="/login" element={<Login/>} exact />
                             </Routes>
                         </BrowserRouter>
                     </div>
