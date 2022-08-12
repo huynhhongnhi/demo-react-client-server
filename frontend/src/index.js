@@ -8,7 +8,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     
-    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+    <i className="bi bi-list mobile-nav-toggle d-xl-none"></i>
     <App />
   </React.StrictMode>
 );
