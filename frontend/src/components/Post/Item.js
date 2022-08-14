@@ -4,7 +4,7 @@ const Itemn = () => {
   return (
     <div className="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
             <div className="position-relative tm-thumbnail-container">
-                <img src="img/tn-01.jpg" alt="Image" className="img-fluid tm-catalog-item-img" />
+                <input type="image" img src = {'img/tn-01.jpg'} alt="photo" className="img-fluid tm-catalog-item-img" />
             </div>    
             <div className="p-4 tm-bg-gray tm-catalog-item-description">
                 <h3 className="tm-text-primary mb-3 tm-catalog-item-title">Aenean aliquet sapien</h3>

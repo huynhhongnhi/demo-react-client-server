@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from 'react-router-dom';
 
 const Category = () => {
   return (
@@ -8,11 +9,18 @@ const Category = () => {
             <div className="tm-categories-container mb-5">
                 <h3 className="tm-text-primary tm-categories-text">Categories:</h3>
                 <ul className="nav tm-category-list">
-                    <li className="nav-item tm-category-item"><a href="#" className="nav-link tm-category-link active">All</a></li>
-                    <li className="nav-item tm-category-item"><a href="#" className="nav-link tm-category-link">Drone Shots</a></li>
-                    <li className="nav-item tm-category-item"><a href="#" className="nav-link tm-category-link">Nature</a></li>
-                    <li className="nav-item tm-category-item"><a href="#" className="nav-link tm-category-link">Actions</a></li>
-                    <li className="nav-item tm-category-item"><a href="#" className="nav-link tm-category-link">Featured</a></li>
+                    <li className="nav-item tm-category-item">
+                      <Link className="nav-link tm-nav-link" to="/">All</Link>
+                    </li>
+                    <li className="nav-item tm-category-item">
+                      <Link className="nav-link tm-nav-link" to="/?categoryId=1">Cate 01</Link>
+                    </li>
+                    <li className="nav-item tm-category-item">
+                      <Link className="nav-link tm-nav-link" to="/?categoryId=2">Cate 02</Link>
+                    </li>
+                    <li className="nav-item tm-category-item">
+                      <Link className="nav-link tm-nav-link" to="/?categoryId=3">Cate 03</Link>
+                    </li>
                 </ul>
             </div>        
         </div>

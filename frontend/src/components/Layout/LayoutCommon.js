@@ -3,8 +3,8 @@ import HeaderCommon from "./Header/HeaderCommon";
 import Footer from "./Footer/Footer";
 import Home from '../Home/Home';
 import About from '../About/About';
-import Login from '../Auth/Login';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Auth from '../Auth/Auth';
+import { Routes, Route } from 'react-router-dom';
 
 const LayoutCommon = () => {
   return (
@@ -15,13 +15,11 @@ const LayoutCommon = () => {
             <div className="mx-auto tm-content-container">
                 <div className="row mt-3 mb-5 pb-3">
                     <div className="col-12">
-                        <BrowserRouter>
-                            <Routes>
-                                <Route path="/" element={<Home/>} exact />
-                                <Route path="/about" element={<About/>} exact />
-                                <Route path="/login" element={<Login/>} exact />
-                            </Routes>
-                        </BrowserRouter>
+                        <Routes>
+                            <Route path="/" element={<Home/>} exact />
+                            <Route path="/about" element={<About/>} to="/about" exact />
+                            <Route path="/auth" element={<Auth/>} exact />
+                        </Routes>
                     </div>
                 </div>
             </div>
@@ -31,7 +29,7 @@ const LayoutCommon = () => {
         <div className="col-xl-6 col-lg-12 mb-4">
             <div className="tm-bg-gray p-5 h-100">
                 <h3 className="tm-text-primary mb-3">Do you want to get our latest updates?</h3>
-                <p className="mb-5">
+                <p>
                     Please subscribe our newsletter for upcoming new videos and latest information about our
                     work. Thank you.
                 </p>
