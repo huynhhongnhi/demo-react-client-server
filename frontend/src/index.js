@@ -7,7 +7,6 @@ import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    
     <i className="bi bi-list mobile-nav-toggle d-xl-none"></i>
     <App />
   </React.StrictMode>

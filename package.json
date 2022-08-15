@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "3.5.1",
-    "react-router-dom": "^6.3.0"
+    "concurrently": "3.5.1"
   }
 }

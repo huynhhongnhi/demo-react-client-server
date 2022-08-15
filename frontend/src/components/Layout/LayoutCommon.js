@@ -13,12 +13,12 @@ const LayoutCommon = () => {
       <main>
         <div className="container-fluid px-0">
             <div className="mx-auto tm-content-container">
-                <div className="row mt-3 mb-5 pb-3">
+                <div className="row mt-3 pb-3">
                     <div className="col-12">
                         <Routes>
                             <Route path="/" element={<Home/>} exact />
                             <Route path="/about" element={<About/>} to="/about" exact />
-                            <Route path="/auth" element={<Auth/>} exact />
+                            <Route path="/auth" element={<Auth authMode="signup"></Auth>} exact />
                         </Routes>
                     </div>
                 </div>
